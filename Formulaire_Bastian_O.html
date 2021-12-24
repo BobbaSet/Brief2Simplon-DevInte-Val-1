@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire B.O</title>
+</head>
+<body>
+       <fieldset>
+           <legend>Information personnel</legend>
+        <form>
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" required>
+        </form>
+        <form>
+            <label for="nom">Nom de famille :</label>
+            <input type="text" id="nom" name="nom" required>
+        </form>
+        <form>
+            <label for="age">Age :</label>
+            <input type="number" id="age" name="age" min="16" max="99">
+        </form>
+        <form>
+            <input type="radio" id="h" name="sexe" value="homme">
+            <label for="h">Homme</label>
+            <input type="radio" id="f" name="sexe" value="femme">
+            <label for="f">Femme</label>
+        </form>
+        <form>
+            <label for="mail">Adresse mail :</label>
+            <input type="email" id="mail" name="mail" required>
+        </form>
+        <form>
+            <label for="codepostal">Code postal :</label>
+            <input type="text" id="codepostal" name="codepostal" maxlength="5">
+        </form>
+        <form>
+            <label for="ville">Ville :</label>
+            <input type="text" id="ville" name="ville">
+        </form>
+        <form>
+            <label for="metier">Métier exercé :</label>
+            <select id="metier" name="metier">
+                <optgroup label="Métier">
+                    <option value="agriculture">Agriculteur</option>
+                    <option value="ouvrier">Ouvrier</option>
+                    <option value="jardinage">Jardinier</option>
+                </optgroup>
+            </select>
+        </form>
+        <form>
+            <label for="nationnalite">Nationnalité :</label>
+            <select id="nationnalite" name="nationnalite">
+                <optgroup label="Nationnalité">
+                    <option value="française">Française</option>
+                    <option value="canadienne">Canadienne</option>
+                    <option value="americaine">Américaine</option>
+                    <option value="africaine">Africaine</option>
+                </optgroup>
+            </select>
+        </form>
+        <form>
+            <label for="date">Date de naissance :</label>
+            <input type="date" id="date" name="date">
+        </form>
+        <form>
+            <label for="pays">Pays de résidence :</label>
+            <input type="text" id="pays" name="pays">
+        </form>
+        <form>
+            <label for="securite">Numéro de sécurité social :</label>
+            <input type="number" id="securite" name="securite">
+        </form>
+        <form>
+            <label for="passport">Numéro du passeport</label>
+            <input type="number" id="passport" name="passport">
+        </form>
+        <form>
+            <label for="delivrance">Date de délivrance du passeport :</label>
+            <input type="date" id="delivrance" name="delivrance">
+        </form>
+        <form>
+            <label for="validite">Date de validité du passeport</label>
+            <input type="date" id="validite" name="validite">
+            
+        </form>
+        <form method="post">
+        <input type="submit" value="Envoyer le formulaire">
+        </form>
+     </fieldset>
+</body>
+</html>
